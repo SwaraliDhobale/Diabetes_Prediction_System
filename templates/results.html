@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Results</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .result-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .result-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .result-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .back-link {
+            font-size: 16px;
+            color: #007bff;
+        }
+        .back-link:hover {
+            text-decoration: none;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body background="https://media.istockphoto.com/id/1032679138/photo/nurse-making-a-blood-test-mans-hand-with-red-blood-drop-with-blood-glucose-test-strip-and.webp?b=1&s=170667a&w=0&k=20&c=zBacqzoQtnRvQlWGOhkOwmnAqUvb4nOHAw89iG6pU6k=" style="background-attachment: fixed; background-repeat: no-repeat;background-size: 100%;">
+    <div class="container">
+        <div class="result-container">
+            <h2 class="result-header">Diabetes Prediction Results</h2>
+            <p class="result-text">Prediction: {{ prediction }}</p>
+            <a href="/" class="back-link">Back to Prediction Form</a>
+        </div>
+    </div>
+</body>
+</html>
